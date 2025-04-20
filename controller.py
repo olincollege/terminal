@@ -1,19 +1,19 @@
 class Controller:
-    
-    def __init__():
+
+    def __init__(self):
         pass
 
-    def open_directory():
+    def open_directory(self):
         pass
-    
-    def open_file():
+
+    def open_file(self):
         pass
-    
-    def store_inventory():
+
+    def store_inventory(self):
         pass
-    
-    def bookmark():
+
+    def bookmark(self):
         pass
-    
-    def enter_password():
+
+    def enter_password(self):
         pass
