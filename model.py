@@ -6,6 +6,44 @@ class Model:
 
     def __init__(self):
         self._player_name = "____"
+        self._unlock_status = 1
+        self._unlock_password = {
+            2: "vires_in_silentio",
+            3: "TESTETSETESTSET"
+        }
+
+    @property
+    def unlock_status(self):
+        """
+        Retrieve the current unlock status of the player.
+
+        Returns:
+            int: The current unlock level of the player.
+        """
+        return self.unlock_status
+    
+    def verify_password_unlock(self, player_input):
+        """
+        Verify the player's input and unlock the next level if the input matches the required password.
+
+        Args:
+            player_input (str): The password input provided by the player.
+
+        Returns:
+            None, increases unlock status
+        """
+        next_level = self._unlock_status + 1
+        
+        # if the input from the player matches the corresponding password in the dictionary
+        # the player moves up a level and unlocks the next layer of artifacts
+        if player_input == self._unlock_password[next_level]:
+            self._unlock_status = next_level
+
+    def get_accessible_artifacts(self):
+        return [f"artifacts_{i}" for i in range(1, self._unlock_status + 1)]
+
+
+
 
 
 class File:
