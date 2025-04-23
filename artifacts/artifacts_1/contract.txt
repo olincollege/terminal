@@ -1,0 +1,66 @@
+CONTRACT OF EMPLOYMENT
+
+The Federal Bureau of Investigation of the United States of America agrees to employ Alice LASTNAME and the Employee agrees to be employed, on the terms and conditions set out in this Contract, and in the accompanying Addendum (together, the Agreement).
+
+1.	START AND LENGTH OF EMPLOYMENT
+The Employee will start employment on April 10th, 1992. 
+The Employer shall employ the Employee for 5 years, however, the Employer and the Employee may change the Length of Employment in accordance with Clause 11 of this Contract.
+
+2.	JOB TITLE AND DUTIES
+The Employee shall be employed as Head Cybersecurity Officer and the Employee’s duties shall be as follows: 
+Identifying security measures to improve incident response
+Responding to security incidents
+Coordinating incident response across teams
+Performing security assessments and code audits
+Developing technical solutions to security vulnerabilities
+Researching new attack vectors and developing threat models
+Automating security improvements
+
+3.	PLACE OF WORK
+The Employee shall work at 935 Pennsylvania Avenue, NW
+Washington, D.C. 20535. The Employee shall not be required to work at a different location unless the Employee consents in writing to such an arrangement. Any such employment shall be on the same terms and conditions as this Agreement.
+
+4.	WORKING HOURS
+The Employee’s normal days of work are Monday to Friday and the Employee’s normal hours of work are 9 AM to 5 PM (together, the Work Week). The Employer shall provide the Employee with adequate opportunities to consume meals at reasonable times during the Work Week amounting to at least 1 per day.
+
+5.	PAY
+The Employer shall pay the Employee ________________ per hour. 
+The Employer shall pay the Employee on a regularly scheduled biweekly payday. 
+The Employer cannot require the Employee to work outside of the Work Week, but may request such an arrangement subject to the Employee’s consent. The Employer shall pay the Employee $60 for each hour worked over the Employee’s Normal Work Hours.
+The Employer shall pay the Employee in United States Dollars (USD). Unless otherwise provided for by local law in the jurisdiction of employment, payment shall either be by cheque or direct deposit into a bank account in the name of the Employee and located in the country where the Employee is employed.
+
+6.	WORK CONDITIONS
+The Employer shall ensure the Employee is appropriately instructed and trained in relation to tasks that the Employee will carry out. The Employer shall provide a safe and healthy work environment and shall not require the Employee to do work that subjects the Employee to health or safety hazards.
+The Employer shall at all times treat the Employee in a just and humane manner and shall not allow the Employee to be subject to any form of abuse, harassment, or violence. The Employee has the right to leave employment if abused, harassed, or subject to violence.
+
+7.	MEDICAL CARE
+The Employer shall ensure the Employee has access to medical care in accordance with Local Law. The Employer shall insure the Employee with respect to any injuries incurred while performing any of the duties covered by the terms of this Agreement, and will pay the costs of any related medical treatment.
+
+8.	HOLIDAYS
+The Employer shall provide the Employee with 14 days of paid holiday leave per year, plus public holidays. The Employee shall provide the Employer two weeks’ notice of any Holiday Leave, and the Employer may only refuse Holiday Leave in exceptional circumstances. The Employer shall pay the Employee for any unused Holiday Leave at the earlier of: (i) the end of each year, or (ii) the end of the Employee’s employment.
+During Holiday Leave and outside of Normal Work Hours, the Employee is free to come and go from the household and cannot be required to remain in or within a certain distance of the household or with household members.
+
+9.	SICK PAY AND ABSENCE
+The Employee shall notify the Employer if he or she is going to be absent from work because of sickness or injury. The Employer shall not require the Employee to work when sick or injured. 
+In each year of employment, the Employee shall be entitled to receive the Basic Rate of Pay (as if he/she had worked the Normal Work Hours) per day for the first 7 days of absence from work due to sickness or injury (Paid Sick Leave). The Employee’s entitlement to Paid Sick Leave shall be at least the minimum required by Local Law.
+
+10.	TERMINATION
+The Employee and Employer shall each provide the other with 2 weeks’ written notice of termination in a language the Employee understands. The Employee and Employer may agree that the Employer pay the Employee for this notice period instead of requiring the Employee to work. In exceptional circumstances, as defined in the Addendum, notice of termination is not required.
+On termination, the Employee shall return to the Employer all Employer property, and the Employer shall pay immediately all monies due under this Agreement to the Employee.
+
+11.	CHANGES TO EMPLOYMENT TERMS
+This Contract and the attached Addendum make up the entire Agreement relating to the Employee’s employment. The Employer shall not make any changes to this Agreement without the Employee’s written consent. The Employer shall provide 2 weeks’ written notice of any proposed changes in a language the Employee understands, and the Employer shall permit the Employee to ask questions about such changes. 
+
+I acknowledge that I have read this Contract or it has been read to me; I understand and accept the terms and conditions set out within it, and that this Contract, together with the Addendum, form the Agreement of Employment:
+
+EMPLOYER
+
+Signature _____________________________________________________
+
+Typed or Printed Name ___________________________ Date: _______________
+
+EMPLOYEE
+
+Signature _____________________________________________________
+
+Typed or Printed Name ___________________________ Date: _______________

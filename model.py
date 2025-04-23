@@ -1,3 +1,4 @@
+import os
 import pygame
 import curses
 
@@ -7,10 +8,7 @@ class Model:
     def __init__(self):
         self._player_name = "____"
         self._unlock_status = 1
-        self._unlock_password = {
-            2: "vires_in_silentio",
-            3: "TESTETSETESTSET"
-        }
+        self._unlock_password = {2: "vires_in_silentio", 3: "TESTETSETESTSET"}
 
     @property
     def unlock_status(self):
@@ -21,7 +19,7 @@ class Model:
             int: The current unlock level of the player.
         """
         return self.unlock_status
-    
+
     def verify_password_unlock(self, player_input):
         """
         Verify the player's input and unlock the next level if the input matches the required password.
@@ -33,7 +31,7 @@ class Model:
             None, increases unlock status
         """
         next_level = self._unlock_status + 1
-        
+
         # if the input from the player matches the corresponding password in the dictionary
         # the player moves up a level and unlocks the next layer of artifacts
         if player_input == self._unlock_password[next_level]:
@@ -41,9 +39,6 @@ class Model:
 
     def get_accessible_artifacts(self):
         return [f"artifacts_{i}" for i in range(1, self._unlock_status + 1)]
-
-
-
 
 
 class File:
@@ -99,13 +94,23 @@ class ImageFile(File):
 
 class Directory(File):
 
-    def __init__(self, filename, content_names):
+    def __init__(self, filename, path):
         super().__init__(filename)
+
+        os.chdir(path)
+
         self._contents = []
-        for name in content_names:
+        for name in os.listdir(path):
             if name[-3:] == "txt":
                 self._contents.append(TextFile(name))
-            elif name[-3:] == "png":
+            elif name[-3:] == "jpeg":
                 self._contents.append(ImageFile(name))
             else:
-                self._contents.append(Directory(name))  # needs to be fixed
+                self._contents.append(Directory(name, path + "/" + name))
+
+    def display(self):
+        print(self._name)
+        for file in self._contents:
+            print(file.name)
+            if file.name[-3:] != "txt":
+                file.display()

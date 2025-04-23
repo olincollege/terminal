@@ -29,8 +29,9 @@ class View:
                 ]
                 self._stdscr.addstr(row, 0, f"{layer}/")
                 row += 1
-                for file in files:
-                    self._stdscr.addstr(row, 2, file)
+                for i, file in enumerate(files):
+                    self._stdscr.addstr(row, 1, str(i + 1))
+                    self._stdscr.addstr(row, 3, file)
                     row += 1
             else:
                 self._stdscr.addstr(row, 0, f"{layer}/ (Not Found)")
