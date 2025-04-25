@@ -37,8 +37,50 @@ class Model:
         if player_input == self._unlock_password[next_level]:
             self._unlock_status = next_level
 
-    def get_accessible_artifacts(self):
-        return [f"artifacts_{i}" for i in range(1, self._unlock_status + 1)]
+    def get_accessible_folders(self):
+        """
+        Returns a list of all artifact folders (artifacts_1, artifacts_2, etc.)
+        """
+        base_path = "artifacts"
+        folders = []
+
+        if os.path.exists(base_path):
+            for folder in os.listdir(base_path):
+                folder_path = os.path.join(base_path, folder)
+                if os.path.isdir(folder_path) and folder.startswith(
+                    "artifacts_"
+                ):
+                    folders.append(folder)
+
+        return folders
+
+    def get_accessible_contents(self, folder_name):
+        """
+        Given a folder name (e.g., artifacts_1), return a list of its files
+        if unlocked. Otherwise, return ["LOCKED"].
+        """
+        base_path = "artifacts"
+        folder_path = os.path.join(base_path, folder_name)
+
+        # Parse folder number
+        folder_number = None
+        if folder_name.startswith("artifacts_"):
+            try:
+                folder_number = int(folder_name.split("_")[1])
+            except (IndexError, ValueError):
+                pass  # folder_number stays None
+
+        # Check if folder is locked
+        if folder_number is not None and folder_number > self._unlock_status:
+            return ["LOCKED"]
+
+        # If unlocked, list files
+        if os.path.exists(folder_path) and os.path.isdir(folder_path):
+            files = os.listdir(folder_path)
+            files.sort()  # Optional: sort files alphabetically
+            return files
+
+        return []  # Folder doesn't exist or empty
 
 
 class File:

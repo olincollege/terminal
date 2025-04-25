@@ -1,14 +1,19 @@
 import curses
 from model import Model
 from view import View
+from controller import Controller  # if needed
 
 
-def main(stdscr):
+def main():
+    stdscr = curses.initscr()
+
     model = Model()
-    view = View(stdscr)
-    accessible_artifacts = model.get_accessible_artifacts()
-    view.display_directory(accessible_artifacts)
+    view = View(stdscr)  # <<< Pass model into View's constructor!
+    controller = Controller()  # if you have this
+
+    accessible_artifacts = model.get_accessible_folders()
+    view.display_directory(model, accessible_artifacts)
 
 
 if __name__ == "__main__":
-    curses.wrapper(main)
+    main()
