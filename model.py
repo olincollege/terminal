@@ -43,8 +43,9 @@ class Model:
 
 class File:
 
-    def __init__(self, name):
+    def __init__(self, name, path):
         self._name = name
+        os.chdir(path)
 
     @property
     def name(self):
@@ -56,8 +57,8 @@ class File:
 
 class TextFile(File):
 
-    def __init__(self, filename):
-        super().__init__(filename)
+    def __init__(self, filename, path):
+        super().__init__(filename, path)
         with open(filename, "r") as f:
             self._contents = f.read()
 
@@ -70,8 +71,8 @@ class TextFile(File):
 
 class ImageFile(File):
 
-    def __init__(self, filename):
-        super().__init__(filename)
+    def __init__(self, filename, path):
+        super().__init__(filename, path)
         self._contents = pygame.image.load(filename)
 
     def display(self):
@@ -94,23 +95,26 @@ class ImageFile(File):
 
 class Directory(File):
 
-    def __init__(self, filename, path):
-        super().__init__(filename)
+    def __init__(self, filename, path=os.getcwd()):
+        super().__init__(filename, path)
 
+        path = path + "/" + filename
         os.chdir(path)
 
         self._contents = []
         for name in os.listdir(path):
             if name[-3:] == "txt":
-                self._contents.append(TextFile(name))
+                self._contents.append(TextFile(name, path))
             elif name[-3:] == "jpeg":
-                self._contents.append(ImageFile(name))
+                self._contents.append(ImageFile(name, path))
             else:
-                self._contents.append(Directory(name, path + "/" + name))
+                self._contents.append(Directory(name, path))
+
+    @property
+    def contents(self):
+        return self._contents
 
     def display(self):
         print(self._name)
         for file in self._contents:
             print(file.name)
-            if file.name[-3:] != "txt":
-                file.display()

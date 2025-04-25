@@ -10,7 +10,7 @@ class View:
         self._stdscr = stdscr
         self._pad = curses.newpad(100, 100)
 
-    def display_directory(self, accessible_artifacts):
+    def display_all_accessible(self, accessible_artifacts):
         """
         Displays all files from the accessible artifact layers.
 
@@ -36,6 +36,16 @@ class View:
             else:
                 self._stdscr.addstr(row, 0, f"{layer}/ (Not Found)")
                 row += 1
+        self._stdscr.refresh()
+        self._stdscr.getch()  # Wait for user input
+
+    def display_dir(self, directory):
+        self._stdscr.clear()
+        row = 0
+        for i, file in enumerate(directory.contents):
+            self._stdscr.addstr(row, 1, str(i + 1))
+            self._stdscr.addstr(row, 3, file.name)
+            row += 1
         self._stdscr.refresh()
         self._stdscr.getch()  # Wait for user input
 
