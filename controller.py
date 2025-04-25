@@ -12,9 +12,9 @@ class Controller:
 
     def get_key_press(self):
         while True:
-            if self._pad.get_key() is not None:
-                return self.pad.get_key()
-            if self.pad.get_key() == "+":
+            if self._pad.getkey() is not None:
+                return self.pad.getkey()
+            if self.pad.getkey() == "+":
                 self.model.bookmark()
 
 
@@ -25,9 +25,9 @@ class Controller:
 
     def bookmark(self):
         while True:
-                return self.pad.get_key()
+                return self.pad.getkey()
 
     def enter_password(self):
         entered_password = ""
-        while self._pad_get_key != "e":
-            #entered_password
+        while self._pad_getkey != "e":
+            entered_password = self._pad.getkey()
