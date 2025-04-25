@@ -17,8 +17,7 @@ Researching new attack vectors and developing threat models
 Automating security improvements
 
 3.	PLACE OF WORK
-The Employee shall work at 935 Pennsylvania Avenue, NW
-Washington, D.C. 20535. The Employee shall not be required to work at a different location unless the Employee consents in writing to such an arrangement. Any such employment shall be on the same terms and conditions as this Agreement.
+The Employee shall work at 935 Pennsylvania Avenue, NW, Washington, D.C. 20535. The Employee shall not be required to work at a different location unless the Employee consents in writing to such an arrangement. Any such employment shall be on the same terms and conditions as this Agreement.
 
 4.	WORKING HOURS
 The Employee’s normal days of work are Monday to Friday and the Employee’s normal hours of work are 9 AM to 5 PM (together, the Work Week). The Employer shall provide the Employee with adequate opportunities to consume meals at reasonable times during the Work Week amounting to at least 1 per day.
@@ -38,7 +37,6 @@ The Employer shall ensure the Employee has access to medical care in accordance 
 
 8.	HOLIDAYS
 The Employer shall provide the Employee with 14 days of paid holiday leave per year, plus public holidays. The Employee shall provide the Employer two weeks’ notice of any Holiday Leave, and the Employer may only refuse Holiday Leave in exceptional circumstances. The Employer shall pay the Employee for any unused Holiday Leave at the earlier of: (i) the end of each year, or (ii) the end of the Employee’s employment.
-During Holiday Leave and outside of Normal Work Hours, the Employee is free to come and go from the household and cannot be required to remain in or within a certain distance of the household or with household members.
 
 9.	SICK PAY AND ABSENCE
 The Employee shall notify the Employer if he or she is going to be absent from work because of sickness or injury. The Employer shall not require the Employee to work when sick or injured. 
