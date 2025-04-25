@@ -1,32 +1,29 @@
 import curses
 from time import sleep
 
+
 class Controller:
 
-
-    def __init__(self,pad):
+    def __init__(self, pad, model):
         self._pad = pad
-
-# pad.getkey #string representing file that was pressed
-    #store and print pad.get_key
+        self._model = model
 
     def get_key_press(self):
         while True:
-            if self._pad.getkey() is not None:
-                if self._pad.getkey() == "+":
-                    self.model.bookmark() 
-            return self._pad.getkey()
-
+            key = self._pad.getkey()
+            if key is not None:
+                if key == "+":
+                    self._model.bookmark()
+            return key()
 
     def store_inventory(self):
         pass
 
-
     def bookmark(self):
         while True:
-                return self.pad.getkey()
+            return self._pad.getkey()
 
     def enter_password(self):
         entered_password = ""
-        while self._pad_getkey != "e":
+        while self._pad.getkey() != "e":
             entered_password = self._pad.getkey()
