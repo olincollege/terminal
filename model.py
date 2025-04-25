@@ -42,6 +42,8 @@ class Model:
 
 
 class File:
+    bookmarks = ""
+    
 
     def __init__(self, name):
         self._name = name
@@ -52,6 +54,10 @@ class File:
 
     def display(self):
         pass
+
+    def bookmarked(self):
+        self._bookmark = controller._get_key_press()
+        
 
 
 class TextFile(File):
