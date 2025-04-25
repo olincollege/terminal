@@ -13,10 +13,9 @@ class Controller:
     def get_key_press(self):
         while True:
             if self._pad.getkey() is not None:
-                return self.pad.getkey()
-            if self.pad.getkey() == "+":
-                self.model.bookmark()
-
+                if self._pad.getkey() == "+":
+                    self.model.bookmark() 
+            return self._pad.getkey()
 
 
     def store_inventory(self):
