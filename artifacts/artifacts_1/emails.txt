@@ -1,7 +1,7 @@
-From: robsupervisor@fbi.gov
+From: robert.carter@fbi.gov
 Date: April 5th 
-To: alice@fbi.gov
-cc: sallybigboss@fbi.gov
+To: alice.johnson@fbi.gov
+cc: sally.harris@fbi.gov
 Subject: Welcome!
 
 Dear Alice,
@@ -19,13 +19,13 @@ From one government official to another, I am required to emphasize the need for
 I have heard from the grapevine that I’m to congratulate you for a new member of your family! This must be very welcome news, especially for your dear mother. 
 
 Sincerely,
-Rob Supervisor 
+Rob Carter 
 
 
 
-From: alice@fbi.gov
+From: alice.johnson@fbi.gov
 Date: April 6th
-To: robsupervisor@fbi.gov
+To: robert.carter@fbi.gov
 Subject: re: Welcome!
 
 Dear Rob,
@@ -38,9 +38,9 @@ Looking forward to working with you!
 Alice 
 
 
-From: sallybigboss@fbi.gov
+From: sally.harris@fbi.gov
 Date: April 6th
-To: alice@fbi.gov
+To: alice.johnson@fbi.gov
 Subject: Job Offer Letter
 
 Dear Alice,
@@ -53,17 +53,17 @@ This offer is contingent upon your agreement to the terms of employment, and you
 We’re looking forward to having you on our team. 
 
 Sincerely,
-Sally Bigboss
+Sally Harris
 Attached: contract.pdf
 Attached: NDA.pdf
 Attached: W-9.pdf
 
 
 
-From: alice@fbi.gov
+From: alice.johnson@fbi.gov
 Date: April 6th
-To: sallybigboss@fbi.gov
-cc: robsupervisor@fbi.gov
+To: sally.harris@fbi.gov
+cc: robert.carter@fbi.gov
 Subject: re: Job Offer Letter
 
 Dear Sally,
@@ -79,10 +79,10 @@ Attached: NDA_signed.pdf
 Attached: W-9_signed.pdf
 
 
-From: sallybigboss@fbi.gov
+From: sally.harris@fbi.gov
 Date: April 6th 
-To: alice@fbi.gov
-cc: robsupervisor@fbi.gov
+To: alice.johnson@fbi.gov
+cc: robert.carter@fbi.gov
 Subject: re: re: Job Offer Letter
 
 Dear Alice,
@@ -94,10 +94,10 @@ Sally
 
 
 
-From: alice@fbi.gov
+From: alice.johnson@fbi.gov
 Date: April 6th 
-To: sallybigboss@fbi.gov
-cc: robsupervisor@fbi.gov
+To: sally.harris@fbi.gov
+cc: robert.carter@fbi.gov
 Subject: re: re: re: Job Offer Letter
 
 Dear Sally,
@@ -110,9 +110,9 @@ Alice
 
 
 
-From: robsupervisor@fbi.gov
+From: robert.carter@fbi.gov
 Date: April 6th 
-To: alice@fbi.gov
+To: alice.johnson@fbi.gov
 Subject: re: re: re: Job Offer Letter
 
 Dear Alice,
@@ -125,9 +125,9 @@ Rob
 
 
 
-From: alice@fbi.gov
+From: alice.johnson@fbi.gov
 Date: April 6th 
-To: robsupervisor@fbi.gov
+To: robert.carter@fbi.gov
 Subject: re: re: re: re: Job Offer Letter
 
 Thanks Rob! 
@@ -135,9 +135,9 @@ Thanks Rob!
 
 
 
-From: alice@fbi.gov
+From: alice.johnson@fbi.gov
 Date: April 13th 
-To: robsupervisor@fbi.gov
+To: robert.carter@fbi.gov
 Subject: Thanks for the introduction
 
 Dear Rob,
@@ -153,9 +153,9 @@ Alice
 
 
 
-From: robsupervisor@fbi.gov
+From: robert.carter@fbi.gov
 Date: April 13th
-To: alice@fbi.gov
+To: alice.johnson@fbi.gov
 Subject: re: Thanks for the introduction
 
 Dear Alice,
@@ -171,9 +171,9 @@ Rob
 
 
 
-From: alice@fbi.gov
+From: alice.johnson@fbi.gov
 Date: April 13th
-To: sallybigboss@fbi.gov
+To: sally.harris@fbi.gov
 Subject: Thank You
 
 Dear Sally,
@@ -189,9 +189,9 @@ Alice
 
 
 
-From: sallybigboss@fbi.gov
+From: sally.harris@fbi.gov
 Date: April 13th
-To: alice@fbi.gov
+To: alice.johnson@fbi.gov
 Subject: re: Thank You
 
 Dear Alice,
@@ -209,7 +209,7 @@ Sally
 
 From: onboarding@fbi.gov
 Date: April 14th
-To: alice@fbi.gov
+To: alice.johnson@fbi.gov
 Subject: FBI Onboarding: Required Trainings and Documentation
 
 Dear Alice,
@@ -239,7 +239,7 @@ FBI Onboarding Services
 
 From: secure-access@fbi.gov
 Date: April 14th
-To: alice@fbi.gov
+To: alice.johnson@fbi.gov
 Subject: Access Credentials for Protocol 9
 
 [SECURE TRANSMISSION – LEVEL 3 CLEARANCE REQUIRED]
@@ -261,9 +261,9 @@ This message will auto-expire from inbox records in 24 hours.
 
 
 
-From: alice@fbi.gov
+From: alice.johnson@fbi.gov
 Date: April 15th
-To: robsupervisor@fbi.gov
+To: robert.carter@fbi.gov
 Subject: Onboarding Complete!
 
 Hi Rob,
@@ -279,9 +279,9 @@ Alice
 
 
 
-From: robsupervisor@fbi.gov
+From: robert.carter@fbi.gov
 Date: April 15th
-To: alice@fbi.gov
+To: alice.johnson@fbi.gov
 Subject: re: Onboarding Complete!
 
 Hi Alice,
