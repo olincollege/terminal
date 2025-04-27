@@ -12,9 +12,6 @@ class View:
         self._pad = curses.newpad(100, 100)
         self._model = Model
 
-<<<<<<< HEAD
-    def display_directory(self, model, accessible_artifacts):
-=======
     def display_all_accessible(self, accessible_artifacts):
         """
         Displays all files from the accessible artifact layers.
@@ -22,7 +19,6 @@ class View:
         Args:
             accessible_artifacts (list): List of accessible artifact layer names.
         """
->>>>>>> 3f557bbbbbbc8b4edb91af159bae5002b26e2d59
         self._stdscr.clear()
         row = 0
         for layer in accessible_artifacts:

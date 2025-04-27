@@ -6,9 +6,19 @@ import curses
 class Model:
 
     def __init__(self):
+        self._bookmark = []
         self._player_name = "____"
         self._unlock_status = 1
         self._unlock_password = {2: "vires_in_silentio", 3: "TESTETSETESTSET"}
+
+    def bookmark(self, file):
+        """
+        Adds the current file to the bookmark list
+
+        Args:
+            file (_type_): _description_
+        """
+        self._bookmark.append(file)
 
     @property
     def unlock_status(self):
@@ -84,10 +94,9 @@ class Model:
 
 
 class File:
-    bookmarks = ""
-    
 
     def __init__(self, name, path):
+
         self._name = name
         os.chdir(path)
 
@@ -97,10 +106,6 @@ class File:
 
     def display(self):
         pass
-
-    def bookmarked(self):
-        self._bookmark = controller._get_key_press()
-        
 
 
 class TextFile(File):
