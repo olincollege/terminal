@@ -14,16 +14,14 @@ class Controller:
             if key is not None:
                 if key == "+":
                     self._model.bookmark()
-            return key()
-
-    def store_inventory(self):
-        pass
-
-    def bookmark(self):
-        while True:
-            return self._pad.getkey()
+                    #View should have bookmark method?
+            return key
 
     def enter_password(self):
         entered_password = ""
-        while self._pad.getkey() != "e":
-            entered_password = self._pad.getkey()
+        while True:
+            key = self._pad.getkey()
+            if key == "e":
+                break
+            entered_password += key
+        return entered_password
