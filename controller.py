@@ -12,9 +12,9 @@ class Controller:
         while True:
             key = self._pad.getkey()
             if key is not None:
+
                 if key == "+":
                     self._model.bookmark()
-                    #View should have bookmark method?
             return key
 
     def enter_password(self):
