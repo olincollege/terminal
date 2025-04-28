@@ -1,57 +1,44 @@
-import time
-from curses import wrapper
-import curses
 import os
-from model import Model
+import curses
+from model import Model, Directory
 
 
 class View:
-
     def __init__(self, stdscr):
         self._stdscr = stdscr
         self._pad = curses.newpad(100, 100)
-        self._model = Model
+        self._model = Model()
 
-    def display_all_accessible(self, accessible_artifacts):
+    def display_directory(self, directory):
         """
-        Displays all files from the accessible artifact layers.
-
-        Args:
-            accessible_artifacts (list): List of accessible artifact layer names.
+        Display immediate contents of the current directory:
+        - Show folder names (with /)
+        - Show file names
+        - Do not expand inside folders
         """
         self._stdscr.clear()
         row = 0
-        for layer in accessible_artifacts:
-            self._stdscr.addstr(row, 0, f"{layer}/")
-            row += 1
 
-            files = model.get_accessible_contents(layer)
-
-            if files == ["LOCKED"]:
-                self._stdscr.addstr(row, 2, "LOCKED")
+        if isinstance(directory, list):
+            for folder_name in directory:
+                self._stdscr.addstr(row, 0, f"{folder_name}/")
                 row += 1
-            elif files == []:
-                self._stdscr.addstr(row, 2, "(No files)")
+        else:
+            for i, item in enumerate(directory.contents):
+                if hasattr(item, "contents"):
+                    self._stdscr.addstr(row, 2, f"{item.name}/")
+                else:
+                    self._stdscr.addstr(row, 2, f"{i + 1}. {item.name}")
                 row += 1
-            else:
-                for i, file in enumerate(files):
-                    self._stdscr.addstr(row, 2, f"{i + 1}. {file}")
-                    row += 1
 
         self._stdscr.refresh()
-        self._stdscr.getch()
-
-    def display_dir(self, directory):
-        self._stdscr.clear()
-        row = 0
-        for i, file in enumerate(directory.contents):
-            self._stdscr.addstr(row, 1, str(i + 1))
-            self._stdscr.addstr(row, 3, file.name)
-            row += 1
-        self._stdscr.refresh()
-        self._stdscr.getch()  # Wait for user input
+        key = self._stdscr.getch()
+        return key
 
     def display_file(self, file):
+        """
+        Display a file's contents.
+        """
         file.display()
 
     def display_bookmarks(self):
