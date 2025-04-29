@@ -12,10 +12,10 @@ class Controller:
         while True:
             key = self._pad.getkey()
             if key is not None:
-
                 if key == "+":
                     self._model.bookmark()
-            return key
+                return key
+            sleep(0.002)
 
     def enter_password(self):
         entered_password = ""
