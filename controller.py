@@ -4,13 +4,13 @@ from time import sleep
 
 class Controller:
 
-    def __init__(self, pad, model):
-        self._pad = pad
+    def __init__(self, stdscr, model):
+        self._stdscr = stdscr
         self._model = model
 
     def get_key_press(self):
         while True:
-            key = self._pad.getkey()
+            key = self._stdscr.getkey()
             if key is not None:
                 if key == "+":
                     self._model.bookmark()
@@ -20,7 +20,7 @@ class Controller:
     def enter_password(self):
         entered_password = ""
         while True:
-            key = self._pad.getkey()
+            key = self._stdscr.getkey()
             if key == "e":
                 break
             entered_password += key

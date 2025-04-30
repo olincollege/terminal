@@ -1,6 +1,6 @@
 CONTRACT OF EMPLOYMENT
 
-The Federal Bureau of Investigation of the United States of America agrees to employ Alice LASTNAME and the Employee agrees to be employed, on the terms and conditions set out in this Contract, and in the accompanying Addendum (together, the Agreement).
+The Federal Bureau of Investigation of the United States of America agrees to employ Alice Johnson and the Employee agrees to be employed, on the terms and conditions set out in this Contract, and in the accompanying Addendum (together, the Agreement).
 
 1.	START AND LENGTH OF EMPLOYMENT
 The Employee will start employment on April 10th, 1992. 
@@ -23,8 +23,8 @@ The Employee shall work at 935 Pennsylvania Avenue, NW, Washington, D.C. 20535. 
 The Employee’s normal days of work are Monday to Friday and the Employee’s normal hours of work are 9 AM to 5 PM (together, the Work Week). The Employer shall provide the Employee with adequate opportunities to consume meals at reasonable times during the Work Week amounting to at least 1 per day.
 
 5.	PAY
-The Employer shall pay the Employee ________________ per hour. 
-The Employer shall pay the Employee on a regularly scheduled biweekly payday. 
+The Employer shall pay the Employee $50 per hour. 
+The Employer shall pay the Employee on a regularly scheduled weekly payday. 
 The Employer cannot require the Employee to work outside of the Work Week, but may request such an arrangement subject to the Employee’s consent. The Employer shall pay the Employee $60 for each hour worked over the Employee’s Normal Work Hours.
 The Employer shall pay the Employee in United States Dollars (USD). Unless otherwise provided for by local law in the jurisdiction of employment, payment shall either be by cheque or direct deposit into a bank account in the name of the Employee and located in the country where the Employee is employed.
 
@@ -55,10 +55,10 @@ EMPLOYER
 
 Signature _____________________________________________________
 
-Typed or Printed Name ___________________________ Date: _______________
+Typed or Printed Name: ___________________________ Date: _______________
 
 EMPLOYEE
 
 Signature _____________________________________________________
 
-Typed or Printed Name ___________________________ Date: _______________
+Typed or Printed Name: ___________________________ Date: _______________

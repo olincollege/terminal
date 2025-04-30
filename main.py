@@ -1,21 +1,16 @@
 from time import sleep
-import os
 import curses
 from model import Model
-from model import TextFile
-from model import ImageFile
 from model import Directory
 from view import View
 from controller import Controller
 
 
 def main(stdscr):
-    # stdscr = curses.initscr()
 
     model = Model()
-    view = View(stdscr)
-    controller = Controller(curses.newpad(100, 100), model)
-    # accessible_artifacts = model.get_accessible_artifacts()
+    controller = Controller(stdscr, model)
+    view = View(stdscr, controller)
 
     basedir = Directory("artifacts")
 
@@ -40,16 +35,10 @@ def main(stdscr):
         else:
             try:
                 selected_file = current_dir.contents[int(input_key) - 1]
+                current_dir = selected_file
+                current_dir_path.append(current_dir)
+                view.display_file(selected_file, current_dir_path)
 
-                # display file depending on type
-                if isinstance(selected_file, Directory):
-                    current_dir = selected_file
-                    current_dir_path.append(current_dir)
-                    view.display_file(selected_file, current_dir_path)
-                else:
-                    view.display_file(
-                        selected_file, current_dir_path + [selected_file]
-                    )
             # TODO: specify exceptions
             except:
                 pass
