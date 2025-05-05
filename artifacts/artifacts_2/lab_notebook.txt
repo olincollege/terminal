@@ -1,7 +1,7 @@
 LAB JOURNAL
 DATE: 04/18/1984
 RESEARCHER: A. Johnson
-CLEARANCE LEVEL: BASIC
+CLEARANCE LEVEL: BASIC 
 LOCATION: Sublevel 3, East Wing Terminal
 SUBJECT: CENTINEL-1 Baseline Initialization – Firewall Traffic Response
 OBJECTIVE:

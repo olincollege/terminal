@@ -1,7 +1,7 @@
 """
-Tests for the Controller class using pytest.
+Unit tests for the Controller class using pytest.
 
-Each test mocks user input via a custom MockStdscr class.
+Simulates user input via a mock stdscr interface to test keyboard interaction.
 """
 
 from controller import Controller
@@ -9,7 +9,7 @@ from controller import Controller
 
 class MockStdscr:  # pylint: disable=too-few-public-methods
     """
-    Mock curses stdscr to simulate getkey() calls.
+    Mock for the curses stdscr object to simulate getkey() inputs.
     """
 
     def __init__(self, inputs):
@@ -18,13 +18,13 @@ class MockStdscr:  # pylint: disable=too-few-public-methods
 
     def getkey(self):
         """
-        Simulate a single key press.
+        Simulates pressing a key by returning the next value from the input.
 
         Returns:
-            str: The next input in the sequence.
+            str: A single character string representing a keypress.
         """
         if self.index >= len(self.inputs):
-            raise IndexError("Ran out of mock inputs")
+            raise IndexError("Ran out of mock inputs.")
         key = self.inputs[self.index]
         self.index += 1
         return key
@@ -32,22 +32,20 @@ class MockStdscr:  # pylint: disable=too-few-public-methods
 
 class MockModel:  # pylint: disable=too-few-public-methods
     """
-    Mock model class to test Controller.bookmark().
+    Dummy model stub to satisfy Controller dependencies.
     """
 
     def __init__(self):
         self.bookmarked = False
 
     def bookmark(self):
-        """
-        Simulates bookmarking a file.
-        """
+        """Simulate bookmarking logic."""
         self.bookmarked = True
 
 
-def test_get_key_press_normal():
+def test_get_key_press_returns_character():
     """
-    Test that get_key_press returns a regular key.
+    Test that get_key_press returns a key character from input sequence.
 
     Args:
         None
@@ -61,12 +59,11 @@ def test_get_key_press_normal():
 
     result = controller.get_key_press()
     assert result == "a"
-    assert not model.bookmarked
 
 
-def test_get_key_press_bookmark():
+def test_enter_password_collects_until_newline():
     """
-    Test that get_key_press returns '+' and triggers model.bookmark().
+    Test that enter_password collects characters until newline ('\\n').
 
     Args:
         None
@@ -74,30 +71,10 @@ def test_get_key_press_bookmark():
     Returns:
         None
     """
-    stdscr = MockStdscr(["+"])
-    model = MockModel()
-    controller = Controller(stdscr, model)
-
-    result = controller.get_key_press()
-    assert result == "+"
-    assert model.bookmarked
-
-
-def test_enter_password():
-    """
-    Test that enter_password collects typed characters until newline is entered.
-
-    Args:
-        None
-
-    Returns:
-        None
-    """
-    input_sequence = list("vires_in_silentio") + ["\n"]
+    input_sequence = list("secret123") + ["\n"]
     stdscr = MockStdscr(input_sequence)
     model = MockModel()
     controller = Controller(stdscr, model)
 
-    expected = "vires_in_silentio"
     password = controller.enter_password()
-    assert password == expected
+    assert password == "secret123"

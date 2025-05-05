@@ -9,7 +9,7 @@ class Model:
         self._bookmarks = []
         self._player_name = "____"
         self._unlock_level = 1
-        self._unlock_password = {2: "vires_in_silentio", 3: "TESTETSETESTSET"}
+        self._unlock_password = {2: "vires_in_silentio", 3: "CENTENIEL-1"}
 
     def bookmark(self, file):
         """
@@ -57,6 +57,18 @@ class Model:
                     folders.append(folder)
 
         return folders
+
+    def set_unlock_level(self, level):
+        """
+        Set the current unlock level manually (e.g., for testing).
+
+        Args:
+            level (int): The desired unlock level.
+
+        Returns:
+            None
+        """
+        self._unlock_level = level
 
     def get_accessible_contents(self, folder_name):
         """
