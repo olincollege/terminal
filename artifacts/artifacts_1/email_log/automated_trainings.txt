@@ -1,0 +1,51 @@
+From: onboarding@fbi.gov
+Date: April 14th
+To: alice.johnson@fbi.gov
+Subject: FBI Onboarding: Required Trainings and Documentation
+
+Dear Alice,
+
+Welcome to the FBI. As part of your onboarding process, you are required to complete a series of training modules and review documentation essential to the nature of your work. Please note that compliance is not optional.
+
+Action Items — to be completed within 5 business days:
+
+FBI Code of Conduct Training
+Cybersecurity Compliance and Best Practices
+Confidentiality and Classified Information Handling
+Incident Response Protocol: Internal Breach
+Visual Recognition and Internal Identification Exercise
+Orientation Module: Protocol 9 (password will be sent separately)
+Review and acknowledge the Employee Handbook (Section 13 is to be read in full, without exception)
+
+Please be aware: non-completion or deviation from protocol will be logged. For assistance or clarification, contact our internal support line via encrypted channel only.
+
+We look forward to your contributions. Your presence has already been noted.
+
+Sincerely,
+FBI Onboarding Services
+[This is an automated message. Please do not reply directly to this email.]
+
+
+
+
+From: secure-access@fbi.gov
+Date: April 14th
+To: alice.johnson@fbi.gov
+Subject: Access Credentials for Protocol 9
+
+[SECURE TRANSMISSION – LEVEL 3 CLEARANCE REQUIRED]
+
+Agent Alice,
+
+You are authorized to access Orientation Module: Protocol 9. Use the credentials below to proceed.
+
+Access Password: vires_in_silentio
+
+Do not write down, transmit, or speak this password aloud. This credential will expire in 72 hours. After this window, access will be revoked and reauthorization must be requested through proper internal channels.
+
+Completion of Protocol 9 is mandatory. Proceed with full attention.
+
+This message will auto-expire from inbox records in 24 hours.
+
+– FBI Secure Access System
+[DO NOT REPLY]
