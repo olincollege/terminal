@@ -1,33 +1,47 @@
-# Python Project Template Repository
+# terminal: the game
 
-This is a template repository for a Python project. Feel free to use and edit
-this repository (including this file) for your needs. Below, find some
-instructions and tips for using this template repository.
+Twenty years ago, my sister — the only person in the world who loved me without reservations — died. They said it was an accident. They said it was over.
 
-## How to Use
+They lied.
 
-Click on the "Use this template" button in the top right corner to create a new
-repository based on this template. If this is for a class project, we ask that
-you keep it in the `olincollege` GitHub organization, and that you refrain from
-keeping the repository private. This will ensure that relevant people can access
-your repository for assessment, etc.
+I was just a kid when it happened. I didn’t know what she was working on. I didn’t understand the late-night calls, the encrypted drives, the sudden silence without any warnings. But I always knew something was wrong.
 
-## Requirements
+Now, two decades later, a package arrives. No return address. No explanation. Just her old laptop — battered, encrypted, and practically humming with secrets that were never meant to be unearthed.
 
-The `requirements.txt` file is blank and should be filled out with any project
-dependencies. There is a Python package called `pipreqs` that autogenerates the
-contents of the `requirements.txt` file based on the `import` statements in your
-`.py` files. To get this, run
+This game is not just a puzzle.
 
-```
-pip install pipreqs
-```
+It is a reconstruction. A resurrection. A final message stitched into code by a woman who knew they were coming for her — and who knew that, one day, I would come in search for the truth.
 
-Then, in the root of your project repository, run:
+This is my investigation.
 
-```
-pipreqs --mode compat
-```
+This is *terminal*.
 
-If you already have a `requirements.txt`, the above command will ask you to
-rerun the command with the `--force` flag to overwrite it.
+## Project Overview
+
+This project is an interactive text-based murder-mystery Terminal based-game that takes place inside your sisters computer to uncover what happened to her many years ago.
+
+
+### DISCLAIMER
+
+All characters and events depicted in this game are entirely fictional. Although some events in this game may seem inspired by real-life situations, any similarities should be assumed to be entirely coincidental. Please do not enter any sensitive information during gameplay.
+
+
+## Getting Started
+
+To run this game, you'll need to have the requirements below installed. To run our project, use python main.py in the cloned location of the game.
+
+## Requirements and Instructions
+
+Run the following commands in order:
+1. `git clone git@github.com:olincollege/terminal.git`
+2. `cd terminal`
+3. `pip install -r requirements.txt`
+4. `python main.py`
+
+
+## Controls
+"1,2,3,4,5,6,7,8,9,0" - Hotkeys to access files
+
+"Q" - Return to previous page
+
+
