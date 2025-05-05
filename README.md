@@ -32,16 +32,20 @@ To run this game, you'll need to have the requirements below installed. To run o
 
 ## Requirements and Instructions
 
-Run the following commands in order:
-1. `git clone git@github.com:olincollege/terminal.git`
-2. `cd terminal`
-3. `pip install -r requirements.txt`
-4. `python main.py`
+Run the following commands:
+```bash
+git clone git@github.com:olincollege/terminal.git
+cd terminal
+pip install -r requirements.txt
+```
+
+To play the game, run:
+```bash
+python main.py
+```
 
 
 ## Controls
-"1,2,3,4,5,6,7,8,9,0" - Hotkeys to access files
+"1, 2, 3, 4, 5, 6, 7, 8, 9" - Hotkeys to access different files
 
 "Q" - Return to previous page
-
-
