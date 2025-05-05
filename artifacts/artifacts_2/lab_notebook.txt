@@ -21,7 +21,7 @@ Introduce malformed payloads and monitor for false positives. Begin logging inte
 
 
 
-DATE: 04/19/1984
+DATE: 04/21/1984
 RESEARCHER: A. Johnson
 CLEARANCE LEVEL: BASIC
 LOCATION: Sublevel 3
@@ -44,7 +44,7 @@ Check against compiled firmware. Cross-reference packet signature with internal 
 
 
 
- DATE: 04/21/1984
+ DATE: 05/04/1984
 RESEARCHER: A. Johnson
 CLEARANCE LEVEL: BASIC
 LOCATION: Isolated Workstation Terminal 4
@@ -67,7 +67,7 @@ Run signal analysis on recorded waveforms. Compare to biometric data from intern
 
 
 
-DATE: 04/23/1984
+DATE: 05/10/1984
 RESEARCHER: A. Johnson
 CLEARANCE LEVEL: BASIC
 LOCATION: Sublevel 3, Secured Node Room
@@ -91,7 +91,7 @@ Trace source of “H.J.” file. Record all unexplained data returns. Keep termi
 
 
 
-DATE: 04/24/1984
+DATE: 05/15/1984
 RESEARCHER: A. Johnson
 CLEARANCE LEVEL: BASIC
 LOCATION: Redacted

@@ -1,0 +1,34 @@
+[Recovered via unauthorized root access – Encrypted Internal Communications Log // USER: ajohnson_shadowdump]
+Log Start: 05/21/1984 – 02:14 AM EST
+Decryption success rate: 98%
+Classification: INTERNAL // REDACTED
+
+
+
+From: robsupervisor@fbi.gov
+Date: May 20th 
+To: sallybigboss@fbi.gov
+Subject: About Alice
+
+Sally,
+
+I’m not sure what we should do about Alice. She’s been poking around and we can’t risk her uncovering any sensitive information. Initiating more security measures would only make us look worse. Besides, she’d probably get past them anyway. We don’t want any repeats. We need to do everything we can to keep this from becoming what happened before.
+
+Keep me updated,
+Rob Supervisor
+
+
+
+
+From: sallybigboss@fbi.gov
+Date: May 20th 
+To: robsupervisor@fbi.gov 
+Subject: Update– Alice Breach
+
+Hello Rob,
+
+Under normal circumstances, I’d say that I hear you and I’d be on board with this plan. However, after some recent developments, I fear we could be too late. Our network shows that she’s already gotten past our firewall which means she could be looking for a failsafe. I tried to keep this as clean as possible, but unfortunately, she forced my hand. This is the job you signed up for Rob. Don’t get cold feet on me now. You know what we need to do. 
+
+Sincerely,
+Sally 
+ 
