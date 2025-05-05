@@ -11,9 +11,10 @@ class Controller:
     def get_key_press(self):
         while True:
             key = self._stdscr.getkey()
+            # if key == "+":
+            #     self._model.bookmark()
+            #     return
             if key is not None:
-                if key == "+":
-                    self._model.bookmark()
                 return key
             sleep(0.002)
 
@@ -21,7 +22,7 @@ class Controller:
         entered_password = ""
         while True:
             key = self._stdscr.getkey()
-            if key == "e":
+            if key == "\n":
                 break
             entered_password += key
         return entered_password

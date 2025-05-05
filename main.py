@@ -10,9 +10,9 @@ def main(stdscr):
 
     model = Model()
     controller = Controller(stdscr, model)
-    view = View(stdscr, controller)
+    view = View(stdscr, controller, model)
 
-    basedir = Directory("artifacts")
+    basedir = Directory("1documents")
 
     current_dir = basedir
     current_dir_path = [current_dir]
@@ -27,10 +27,16 @@ def main(stdscr):
 
         # detect if going back
         if input_key == "q" or input_key == "Q":
-            if len(current_dir_path) > 0:
+            if len(current_dir_path) > 1:
                 current_dir = current_dir_path[-2]
                 current_dir_path = current_dir_path[:-1]
                 view.display_file(current_dir, current_dir_path)
+        # bookmark file
+        elif input_key == "+" and not isinstance(current_dir, Directory):
+            model.bookmark(current_dir)
+        elif input_key == "p" or input_key == "P":
+            current_dir_path.append("bookmarks")
+            view.display_bookmarks()
         # open file using number key
         else:
             try:

@@ -8,7 +8,7 @@ class Model:
     def __init__(self):
         self._bookmarks = []
         self._player_name = "____"
-        self._unlock_status = 1
+        self._unlock_level = 1
         self._unlock_password = {2: "vires_in_silentio", 3: "TESTETSETESTSET"}
 
     def bookmark(self, file):
@@ -21,35 +21,25 @@ class Model:
         self._bookmarks.append(file)
 
     @property
-    def unlock_status(self):
+    def unlock_level(self):
         """
         Retrieve the current unlock status of the player.
 
         Returns:
             int: The current unlock level of the player.
         """
-        return self.unlock_status
+        return self._unlock_level
+
+    @property
+    def passwords(self):
+        return self._unlock_password
 
     @property
     def bookmarks(self):
         return self._bookmarks
 
-    def verify_password_unlock(self, player_input):
-        """
-        Verify the player's input and unlock the next level if the input matches the required password.
-
-        Args:
-            player_input (str): The password input provided by the player.
-
-        Returns:
-            None, increases unlock status
-        """
-        next_level = self._unlock_status + 1
-
-        # if the input from the player matches the corresponding password in the dictionary
-        # the player moves up a level and unlocks the next layer of artifacts
-        if player_input == self._unlock_password[next_level]:
-            self._unlock_status = next_level
+    def increase_level(self):
+        self._unlock_level += 1
 
     def get_accessible_folders(self):
         """
@@ -85,7 +75,7 @@ class Model:
                 pass  # folder_number stays None
 
         # Check if folder is locked
-        if folder_number is not None and folder_number > self._unlock_status:
+        if folder_number is not None and folder_number > self._unlock_level:
             return ["LOCKED"]
 
         # If unlocked, list files
@@ -101,7 +91,7 @@ class File:
 
     def __init__(self, name, path):
 
-        self._name = name
+        self._name = name[1:]
         self._contents = None
         os.chdir(path)
 
@@ -134,14 +124,28 @@ class Directory(File):
     def __init__(self, filename, path=os.getcwd()):
         super().__init__(filename, path)
 
+        self._lock_level = 1
+        if filename == "2archive":
+            self._lock_level = 2
+        elif filename == "3message":
+            self._lock_level = 3
+
         path = path + "/" + filename
         os.chdir(path)
 
         self._contents = []
-        for name in os.listdir(path):
+
+        names = os.listdir(path)[:]
+        names.sort()
+
+        for name in names:
             if name[-3:] == "txt":
                 self._contents.append(TextFile(name, path))
-            elif name[-4:] == "jpeg":
+            elif name[-3:] == "png":
                 self._contents.append(ImageFile(name, path))
             else:
                 self._contents.append(Directory(name, path))
+
+    @property
+    def lock_level(self):
+        return self._lock_level
