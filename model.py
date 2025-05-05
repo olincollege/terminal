@@ -9,7 +9,7 @@ class Model:
         self._bookmarks = []
         self._player_name = "____"
         self._unlock_level = 1
-        self._unlock_password = {2: "vires_in_silentio", 3: "CENTENIEL-1"}
+        self._unlock_password = {2: "vires_in_silentio", 3: "CENTINEL-1"}
 
     def bookmark(self, file):
         """
