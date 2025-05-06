@@ -30,7 +30,7 @@ All characters and events depicted in this game are entirely fictional. Although
 
 To run this game, you'll need to have the requirements below installed. To run our project, use python main.py in the cloned location of the game.
 
-## Requirements and Instructions 
+## Requirements and Instructions
 
 Run the following commands:
 ```bash
