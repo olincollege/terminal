@@ -22,15 +22,6 @@ class Model:
             3: "CENTINEL-1",
         }
 
-    def bookmark(self, file):
-        """
-        Adds the current file to the bookmark list
-
-        Args:
-            file (_type_): _description_
-        """
-        self._bookmarks.append(file)
-
     @property
     def unlock_level(self):
         """
@@ -51,16 +42,6 @@ class Model:
         """
         return self._unlock_password
 
-    @property
-    def bookmarks(self):
-        """
-        Access the list of bookmarked files.
-
-        Returns:
-            list: Bookmarked File/Directory objects.
-        """
-        return self._bookmarks
-
     def increase_level(self):
         """
         Increment the player's unlock level by one.
@@ -75,63 +56,6 @@ class Model:
             level (int): The desired unlock level.
         """
         self._unlock_level = level
-
-    def get_accessible_folders(self):
-        """
-        Return list of folders named 'artifacts_X' in the artifacts directory.
-
-        Returns:
-            list[str]: Folder names that match the 'artifacts_' prefix.
-        """
-        base_path = "artifacts"
-        folders = []
-
-        # Check if the artifacts directory exists
-        if os.path.exists(base_path):
-            for folder in os.listdir(base_path):
-                folder_path = os.path.join(base_path, folder)
-
-                # Only include folders that start with 'artifacts_'
-                if os.path.isdir(folder_path) and folder.startswith(
-                    "artifacts_"
-                ):
-                    folders.append(folder)
-
-        return folders
-
-    def get_accessible_contents(self, folder_name):
-        """
-        Given a folder name (e.g., artifacts_1), return its files if unlocked,
-        otherwise return ["LOCKED"].
-
-        Args:
-            folder_name (str): Name of the folder to access.
-
-        Returns:
-            list[str]: File names or ["LOCKED"] if access is restricted.
-        """
-        base_path = "artifacts"
-        folder_path = os.path.join(base_path, folder_name)
-
-        folder_number = None
-        # Try to extract the folder number (e.g., "artifacts_2" → 2)
-        if folder_name.startswith("artifacts_"):
-            try:
-                folder_number = int(folder_name.split("_")[1])
-            except (IndexError, ValueError):
-                pass  # Ignore if format is wrong
-
-        # If the folder's unlock level is too high, block access
-        if folder_number is not None and folder_number > self._unlock_level:
-            return ["LOCKED"]
-
-        # If unlocked, return its sorted contents
-        if os.path.exists(folder_path) and os.path.isdir(folder_path):
-            files = os.listdir(folder_path)
-            files.sort()
-            return files
-
-        return []  # Return empty list if folder doesn't exist
 
 
 class File:
