@@ -148,14 +148,6 @@ class View:
             files: List of File/Directory objects.
             header: String to show as the title.
         """
-        self._stdscr.clear()
-
-        # Show the current directory name or context
-        self._stdscr.addstr(0, 0, header)
-
-        # Show instructions
-        for i, line in enumerate(self._dir_instructions):
-            self._stdscr.addstr(i, self._cols - 30, line)
 
         # Print each file/directory, numbered
         row = 2
@@ -179,6 +171,17 @@ class View:
             directory: Directory object to view.
             path: Path list from root to this directory.
         """
+
+        self._stdscr.clear()
+
+        # Print the current file path at top-left
+        self._stdscr.addstr(0, 0, self.current_path_to_string(path))
+
+        # Print user instructions at top-right
+        for i, line in enumerate(self._file_instructions):
+            self._stdscr.addstr(i, self._cols - 30, line)
+        self._stdscr.refresh()
+
         # Check if locked
         if directory.lock_level > self._model.unlock_level:
             # Prompt for password if locked
@@ -190,12 +193,6 @@ class View:
             self.display_file_list(
                 directory.contents, self.current_path_to_string(path)
             )
-
-    def display_bookmarks(self):
-        """
-        Display all files currently bookmarked.
-        """
-        self.display_file_list(self._model.bookmarks, "Bookmarks")
 
     def display_file(self, file, path):
         """
@@ -222,8 +219,10 @@ class View:
         Returns:
             bool: True if entered correctly, False otherwise.
         """
-        self._stdscr.clear()
-        self._stdscr.addstr("File locked. Enter password to authorize entry: ")
+
+        self._stdscr.addstr(
+            2, 0, "File locked. Enter password to authorize entry: "
+        )
 
         entered_password = ""
         while True:
@@ -232,6 +231,8 @@ class View:
                 if key == "\n":
                     # Check password and return result
                     return entered_password == password
+                elif key in ("q", "Q"):
+                    return False
                 # Display key as it's typed and update input
                 self._stdscr.addstr(key)
                 entered_password += str(key)

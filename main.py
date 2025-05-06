@@ -33,6 +33,8 @@ def main(stdscr):
 
     game_loop = True
     while game_loop:
+
+        # get input from controller
         input_key = controller.get_key_press()
 
         # navigate back
@@ -42,15 +44,6 @@ def main(stdscr):
                 current_dir_path = current_dir_path[:-1]
                 view.display_file(current_dir, current_dir_path)
 
-        # bookmark file
-        elif input_key == "+" and not isinstance(current_dir, Directory):
-            model.bookmark(current_dir)
-
-        # view bookmarks
-        elif input_key in ("p", "P"):
-            current_dir_path.append("bookmarks")
-            view.display_bookmarks()
-
         # open file
         else:
             try:
@@ -59,8 +52,14 @@ def main(stdscr):
                 current_dir_path.append(current_dir)
                 view.display_file(selected_file, current_dir_path)
 
+                if not isinstance(selected_file, Directory):
+                    if len(current_dir_path) > 1:
+                        current_dir = current_dir_path[-2]
+                        current_dir_path = current_dir_path[:-1]
+                        view.display_file(current_dir, current_dir_path)
+
             except (IndexError, ValueError, AttributeError):
-                # Ignore invalid input or file access errors
+                # Ignore invalid input or no key pressed
                 pass
 
         sleep(0.002)

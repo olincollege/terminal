@@ -88,7 +88,7 @@ CONCLUSION:
 CENTINEL-1 is pulling from a data source I can’t access. Possibly repurposed from another classified program.
 NEXT STEPS:
 Trace source of “H.J.” file. Record all unexplained data returns. Keep terminal isolated from internal network.
-
+Terminal password: CENTINEL-1
 
 
 DATE: 04/24/1984

@@ -36,11 +36,7 @@ class MockModel:  # pylint: disable=too-few-public-methods
     """
 
     def __init__(self):
-        self.bookmarked = False
-
-    def bookmark(self):
-        """Simulate bookmarking logic."""
-        self.bookmarked = True
+        pass
 
 
 def test_get_key_press_returns_character():
