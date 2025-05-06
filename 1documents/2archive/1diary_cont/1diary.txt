@@ -2,7 +2,10 @@ Entry 17
 May 15th
 8:40 pm
 
-We're starting work on a new project next week. They're calling it CENTINEL-1. It's a system of firewalls and encryption for the military, to ensure no security breaches of sensitive information. Although, to my knowledge, military data is already well secured. It shouldn't be outdated or need improving, not on the scale of a project this big. I'll find out more about it in the coming days, I think.
+It's getting a little challenging staying consistent with these entries, but I’m convinced now more than ever that I have to. There’s a lot to talk about. That weird feeling in my gut came back. They started running experiments.
+
+We're starting work on a new project next week. They're calling it CENTINEL-1. It's a system of firewalls and encryption for the military, to ensure no security breaches of sensitive information. Although, to my knowledge, the military data security system shouldn't be outdated or need improving, not on the scale of a project this big. I'll find out more about it in the coming days, I think.
+
 I think Rob still doesn't trust me. He knows I'm qualified for this role, but he always seems like he's hiding something.
 
 
@@ -18,6 +21,7 @@ May 12th
 1:24 am
 
 I've been having trouble sleeping lately. I took this job because I wanted to use my skills to contribute to my country positively. I don't know if it was the right choice. I thought I knew what I was getting myself into, working for the FBI - I guess not.
+
 It's not like there's anything I can do. I signed an NDA, I can't quit, and I can't do anything that might lead my supervisors to be suspicious of me or dislike me. I need this job, for my family. I just need to keep my head down and do the work.
 
 
@@ -26,6 +30,7 @@ May 13th
 6:23 pm
 
 It's a bioweapon. What they've been hiding - what we've been hiding. I don't know how they're planning on using it, but there's no way this is in any way ethical. I don't know if I can be complacent, knowing this is happening, let alone contribute to its development.
+
 I think my family noticed something was off with me when I saw them today, but I don't want to make them worry. They already have so much on their plate with the baby.
 
 
@@ -34,15 +39,20 @@ May 20th
 3:20 am
 
 I haven’t been writing in here lately. There’s so much on my mind I don’t know how to express. And if this ever got out? At best, I lose my supervisors’ and coworkers’ trust. At worst, I lose my job, or worse.
+
 I woke up 2 hours ago after a nightmare. The same dream from weeks ago with the bomb, except this time I left it at home and it exploded while my family was in the house.
+
 I was poking around in the databases yesterday. I think I might have a way to bypass one of the firewalls. If I can do that, I might be able to find a failsafe I can manipulate to destroy the entire system from the inside. 
+
 Sally asked me why I had accessed those files. I made up some excuse about checking for consistency. I don’t know if she believed me.
 
 
 Entry 22
 May 29th
 6:45 pm
+
 I found a note on my desk. “Stay quiet.” With a $100 bill. Oh God, they know what I’m doing. They know what I know, they know what I’m doing and they’re trying to bribe me out of it.
+
 I can’t back down now. I don’t know what they’ll do to me, but I have to go through with this.
 
 note.jpg

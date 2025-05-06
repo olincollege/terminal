@@ -11,9 +11,6 @@ class Controller:
     def get_key_press(self):
         while True:
             key = self._stdscr.getkey()
-            # if key == "+":
-            #     self._model.bookmark()
-            #     return
             if key is not None:
                 return key
             sleep(0.002)

@@ -18,7 +18,7 @@ This is *terminal*.
 
 ## Project Overview
 
-This project is an interactive text-based murder-mystery Terminal based-game that takes place inside your sisters computer to uncover what happened to her many years ago.
+This project is an interactive text-based murder-mystery Terminal based-game that takes place inside your sister's computer to uncover what happened to her many years ago.
 
 
 ### DISCLAIMER
