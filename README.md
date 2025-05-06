@@ -14,17 +14,15 @@ It is a reconstruction. A resurrection. A final message stitched into code by a 
 
 This is my investigation.
 
-This is *terminal*.
+This is _terminal_.
 
 ## Project Overview
 
 This project is an interactive text-based murder-mystery Terminal based-game that takes place inside your sisters computer to uncover what happened to her many years ago.
 
-
 ### DISCLAIMER
 
 All characters and events depicted in this game are entirely fictional. Although some events in this game may seem inspired by real-life situations, any similarities should be assumed to be entirely coincidental. Please do not enter any sensitive information during gameplay.
-
 
 ## Getting Started
 
@@ -33,6 +31,7 @@ To run this game, you'll need to have the requirements below installed. To run o
 ## Requirements and Instructions
 
 Run the following commands:
+
 ```bash
 git clone git@github.com:olincollege/terminal.git
 cd terminal
@@ -40,12 +39,13 @@ pip install -r requirements.txt
 ```
 
 To play the game, run:
+
 ```bash
 python main.py
 ```
 
-
 ## Controls
+
 "1, 2, 3, 4, 5, 6, 7, 8, 9" - Hotkeys to access different files
 
 "Q" - Return to previous page
